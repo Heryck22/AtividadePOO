@@ -8,7 +8,7 @@ public class Carro : Veiculo
 
     public override void Acelerar()
     {
-        Console.WriteLine($"{Modelo} Acelerou  rapido pelas ruas!");
+        Console.WriteLine($"{Modelo} acelerou rapido pelas ruas!");
         Console.WriteLine("--------------------");
     }
 }
