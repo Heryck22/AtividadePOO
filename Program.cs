@@ -1,9 +1,19 @@
 ﻿namespace AtividadePOO;
 
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        Veiculo[] veiculos =
+        [
+            new Carro("Carro", 2999),
+            new Moto("Moto", 2029),
+            new Caminhao("Caminhao", 2080)
+        ];
+        foreach (var veiculo in veiculos)
+        {
+            veiculo.Ligar();
+            veiculo.Acelerar();
+        }
     }
 }
